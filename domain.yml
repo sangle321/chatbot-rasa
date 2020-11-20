@@ -1,0 +1,34 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - ask_func_list
+  - ask_name
+
+
+responses:
+  utter_greet:
+  - text: "Kính chào bạn!"
+
+  utter_thank:
+  - text: "Cảm ơn bạn"
+  - text: "Không có gì, đó là trách nhiệm của chúng tôi"
+
+  utter_goodbye:
+  - text: "Kính chào bạn và mong sớm gặp lại bạn!"
+  - text: "Kính chào tạm biệt và chúc bạn 1 ngày tốt lành!"
+
+  utter_ask_func_list:
+  - text: "Chúng tôi có thể giúp bạn: tra cứu thông tin, học bổng...."
+
+  utter_ask_name:
+  - text: "Tôi tên Bot! Người ta gọi tôi là trợ lý của trường đại học khoa học"
+
+  utter_unclear:
+  - text: "Thưa bạn, hiện tại chúng tôi chưa hiểu được yêu cầu của quý khách. "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

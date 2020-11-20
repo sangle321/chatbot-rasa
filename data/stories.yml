@@ -1,0 +1,37 @@
+version: "2.0"
+
+stories:
+
+- story: Chào - tên - hỏi chức năng - chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_name 
+  - action: utter_ask_name
+  - intent: ask_func_list
+  - action: utter_ask_func_list
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Chào - hỏi chức năng - chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_func_list
+  - action: utter_ask_func_list
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Chào - hỏi tên - chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_name 
+  - action: utter_ask_name
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Cảm ơn
+  steps:
+  - intent: thank
+  - action: utter_thank
